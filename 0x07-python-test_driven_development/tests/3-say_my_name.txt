@@ -1,0 +1,54 @@
+``3-say_my_name``
+=================
+
+Usage
+-----
+
+Import function:
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Pass first name and last name
+
+    >>> say_my_name("John", "Smith")
+    My name is John Smith
+
+Pass first name and last name sec
+
+    >>> say_my_name("Bob")
+    My name is Bob
+
+Pass None as the last name
+
+    >>> say_my_name("John", None)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: last_name must be a string
+
+Pass None as the first name
+
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: first_name must be a string
+
+Pass num as the first name
+
+    >>> say_my_name(12)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: first_name must be a string
+
+Pass num as the last name
+
+    >>> say_my_name("John", 0)
+    Traceback (most recent call last):
+    	      ...
+    TypeError: last_name must be a string
+
+Miss two args
+
+    >>> say_my_name()
+    Traceback (most recent call last):
+    	      ...
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
