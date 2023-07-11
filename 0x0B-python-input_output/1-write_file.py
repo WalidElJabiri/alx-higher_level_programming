@@ -6,5 +6,5 @@ module
 
 def write_file(filename="", text=""):
     """write file"""
-    with open(filename, 'r') as fl:
+    with open(filename, 'w') as fl:
         return fl.write(text)
