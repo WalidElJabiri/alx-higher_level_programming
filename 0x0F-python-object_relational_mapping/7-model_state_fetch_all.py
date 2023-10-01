@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script that lists all lists all State objects 
+Script that lists all lists all State objects
 from the database hbtn_0e_6_usa.
 Arguments:
     mysql username (str)
@@ -19,7 +19,8 @@ if __name__ == "__main__":
     db_name = sys.argv[3]
 
     url = {'drivername': 'mysql+mysqldb', 'host': 'localhost',
-            'username': mySQL_user, 'password': mySQL_pass, 'database': db_name}
+            'username': mySQL_user, 'password': mySQL_pass,
+            'database': db_name}
 
     engine = create_engine(URL(**url), pool_pre_ping=True)
     Base.metadata.create_all(engine)
