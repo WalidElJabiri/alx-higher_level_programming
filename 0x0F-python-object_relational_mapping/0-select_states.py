@@ -15,7 +15,7 @@ if __name__ == "__main__":
     mySQL_pass = sys.argv[2]
     db_name = sys.argv[3]
 
-        db = MySQLdb.connect(user=mySQL_user, passwd=mySQL_pass, db=db_name)
+    db = MySQLdb.connect(user=mySQL_user, passwd=mySQL_pass, db=db_name)
     cur = db.cursor()
 
     cur.execute("SELECT * FROM states ORDER BY id")
