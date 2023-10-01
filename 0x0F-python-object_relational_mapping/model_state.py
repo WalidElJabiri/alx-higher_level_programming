@@ -9,7 +9,9 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 class State(Base):
-    """links to the states table of our database.
+    """
+    links to the states table of our database.
+
     Attributes:
         id (int): id of the state.
         name (str): name of the state.
