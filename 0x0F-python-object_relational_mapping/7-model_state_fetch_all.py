@@ -19,7 +19,7 @@ if __name__ == "__main__":
     db_name = sys.argv[3]
 
     url = {'drivername': 'mysql+mysqldb', 'host': 'localhost',
-            'username': mySQL_user, 'password': mySQL_pass,
+        'username': mySQL_user, 'password': mySQL_pass,
             'database': db_name}
 
     engine = create_engine(URL(**url), pool_pre_ping=True)
