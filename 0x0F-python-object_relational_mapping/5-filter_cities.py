@@ -21,9 +21,9 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     cur.execute("SELECT c.name \
-            FROM cities c INNER JOIN states s \
-            ON c.state_id = s.id WHERE s.name = %s\
-            ORDER BY c.id", (state_name, ))
+                FROM cities c INNER JOIN states s \
+                ON c.state_id = s.id WHERE s.name = %s\
+                ORDER BY c.id", (state_name, ))
     rows = cur.fetchall()
 
     for i in range(len(rows)):
