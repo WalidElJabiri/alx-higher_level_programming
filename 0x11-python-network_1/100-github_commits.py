@@ -6,7 +6,7 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    url = "https://developer.github.com/v3/repos/commits/?per_page=10"\
+    url = "https://api.github.com/repos/{}/{}/commits?per_page=10"\
     .format(argv[2], argv[1])
 
     request = requests.get(url)
